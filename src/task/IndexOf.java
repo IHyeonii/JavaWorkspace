@@ -5,7 +5,6 @@ public class IndexOf {
     String str = "LINESTRING (124.71740503299382 37.82432241942286, 124.71664903321634 37.823676635159025) b2b";
     String str2 = "abcdef";
 
-
     int start = str.indexOf('(');
     int end = str.indexOf(')');
     int find = str2.indexOf('c');
@@ -20,7 +19,11 @@ public class IndexOf {
     System.out.println(str.indexOf('(')); // 괄호가 포함 된 인덱스값 출력 -> 이걸 사용하면 되지 않을까아
     System.out.println(str.indexOf(')'));
 
-    String result = str.substring(start, end);
+    // substring = 시작 인덱스부터 끝 인덱스 직전까지의 문자열을 반환
+    String result = str.substring(start+1, end);
     System.out.println(result);
+
+    // 콤마 구분자로 나누고, 스페이스 구분자로 또
+
   }
 }
