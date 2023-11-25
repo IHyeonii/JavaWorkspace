@@ -1,4 +1,4 @@
-package java_edition3.ch02;
+package jungsuk.ch02;
 
 public class VarEx4 {
   int var = 3;

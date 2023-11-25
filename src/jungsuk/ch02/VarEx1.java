@@ -1,4 +1,4 @@
-package java_edition3.ch02;
+package jungsuk.ch02;
 
 public class VarEx1 {
   // 두 변수의 값 교환하기

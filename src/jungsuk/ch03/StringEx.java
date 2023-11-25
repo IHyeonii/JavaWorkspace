@@ -1,4 +1,4 @@
-package java_edition3.ch03;
+package jungsuk.ch03;
 
 public class StringEx {
   public static void main(String[] args) {

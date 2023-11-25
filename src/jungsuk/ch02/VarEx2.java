@@ -1,8 +1,7 @@
-package java_edition3.ch02;
+package jungsuk.ch02;
 
 import task.Task1;
 
-import java.util.Date;
 import java.util.Scanner;
 
 public class VarEx2 {
