@@ -37,5 +37,12 @@ public class TextPrintRun {
 		String engLine = "aaslkdjfka";
 		tp.removeDupliWord(engLine);
 
+		// 숫자를 단어로 변환하기: 123 → "일이삼"
+		int num = 12345;
+		int num2 = 553457;
+		tp.convert(num);
+		tp.convert(num2);
+
+
 	}
 }

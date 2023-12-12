@@ -1,6 +1,11 @@
 package task1207;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
+import java.util.Formatter;
 import java.util.Random;
 
 public class Number {
@@ -36,7 +41,6 @@ public class Number {
 			}
 		}
 	}
-
 	public void lotto() {
 		// 1~45 숫자 중 랜덤으로, 중복없이 6개 추출
 		
@@ -58,12 +62,33 @@ public class Number {
 			}
 		}
 		System.out.println(Arrays.toString(arr));
-		
-
-		
-		
-		
-		
 	}
+	public void Calendar(int month) {
+		// 1. 날짜 출력하기
+		LocalDate date = LocalDate.now();
+		System.out.println("오늘 날짜는 " + date);
 
+		// 2. 날짜 + 시간
+		LocalDateTime dateTime = LocalDateTime.now();
+		System.out.println("날짜랑 시간은 " + dateTime);
+
+		// 3. 시간만 알고싶어 ?
+		LocalTime time = LocalTime.now();
+		System.out.println("지금 시간은 " + time);
+
+		String format = time.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+		System.out.println("출력 형식을 바꾸면? " + format);
+
+		/**
+		 * LocalDate, LocalTime, LocalDateTime을 나눠 둠
+		 * */
+
+		// 오늘부터 매개변수만큼 +day
+		LocalDate plusMonth = date.plusMonths(month);
+		System.out.println("지금부터 " + month + "개월 뒤: " +plusMonth);
+	}
+	public double convertC(int c) {
+		double f = (c * 1.8) + 32;
+		return f;
+	}
 }
